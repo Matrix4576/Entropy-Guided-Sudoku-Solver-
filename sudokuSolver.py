@@ -108,15 +108,10 @@ def solve(board):
 print("Input Board (NOTE THE 0 ARE EMPTY CELLS): \n")
 for i in range(len(BOARD)):
     print(*BOARD[i])
-# solution = solve(BOARD)
-# if solution == None:
-#     print("No Solutions exist for this board")
-# else:
-#     print("\nSolution: \n")
-#     for i in range(len(solution)):
-#         print(*solution[i])
-
-c = candidates(BOARD, BOARD_ROWS, BOARD_COLOUMS)
-constraint = constraints(BOARD, BOARD_ROWS, BOARD_COLOUMS, c)
-for k, v in constraint.items():
-    print(k, v)
+solution = solve(BOARD)
+if solution == None:
+    print("No Solutions exist for this board")
+else:
+    print("\nSolution: \n")
+    for i in range(len(solution)):
+        print(*solution[i])
