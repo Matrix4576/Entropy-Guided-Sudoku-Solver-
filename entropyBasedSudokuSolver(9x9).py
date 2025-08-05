@@ -126,4 +126,5 @@ if solution == None:
 else:
     print("\nSolution: \n")
     for i in range(len(solution)):
+
         print(*solution[i])
